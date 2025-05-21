@@ -1,0 +1,22 @@
+{
+  "name": "translateable",
+  "version": "1.0.0",
+  "description": "An easy to use language loader.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "keywords": [
+    "language",
+    "webpack",
+    "languages",
+    "translatable",
+    "translateable",
+    "translate",
+    "translation",
+    "translator"
+  ],
+  "author": "Gavin Abu-Zahra",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
