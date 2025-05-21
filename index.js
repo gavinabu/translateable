@@ -5,7 +5,6 @@ const isBrowser = typeof window !== "undefined" &&
   typeof document !== "undefined" &&
   typeof document.createElement === "function";
 
-console.log(isBrowser);
 if (isBrowser) {
   window.translateableInstalled = true;
   window.translateableVersion = VERSION;
