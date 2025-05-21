@@ -1,3 +1,16 @@
+// makes it detectable
+const VERSION = "1.1.0";
+
+const isBrowser = typeof window !== "undefined" &&
+  typeof document !== "undefined" &&
+  typeof document.createElement === "function";
+
+if (isBrowser) {
+  (window as any).translateableInstalled = true;
+  (window as any).translateableVersion = VERSION;
+}
+
+
 export class LanguageNotMatchingException extends Error {
   name = 'LanguageNotMatchingException';
   constructor(supposedId: string, realId: string) {
