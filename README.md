@@ -70,3 +70,17 @@ in your components/pages
     <a href="/messages">{LanguageHandler.instance.lang.get("nav.messages")}</a>
 </nav>
 ```
+\
+I would also recommend putting this into its own component. Since they can get messy. Like this
+```tsx
+export default function TranslateableText(props: {children: string}) {
+  return (
+    <span>{LanguageHandler.instance.lang.get(props.children)}</span>
+  )
+}
+```
+
+and used like this
+```tsx
+    <TranslateableText>app.name</TranslateableText>
+```
