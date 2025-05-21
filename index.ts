@@ -58,6 +58,6 @@ export class Language {
   }
   
   get(id: string) {
-    return this.lang[id];
+    return this.lang[id] || id;
   }
 }
