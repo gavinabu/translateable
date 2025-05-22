@@ -1,8 +1,7 @@
-# Translateable
+<h1 style="margin-bottom: 0.5em">Translat<span style="text-decoration: underline red;">e</span>able</h1>
 An easy-to-use translation package. Work's in any node like framework (this also means anything webpack based, so react, next, etc. also means react native, electron, etc)
 
 ## Getting Started
-
 In your public directory, create a `{language id}.json` file. That looks like this.
 ```json
 {
